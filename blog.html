@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Automate Your Business With n8n - Connect Apps Instantly, No Coding Required, Save Time Daily">
+    <meta name="keywords" content="automation, n8n, workflow, no-code, app integration">
+    <meta name="author" content="n8n">
+    <title>Blog - Automate With n8n - Premium Workflow Automation Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+        
+        body {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        
+        .btn-primary {
+            background-color: #4A90E2;
+            color: #ffffff;
+            border-radius: 4px;
+            padding: 12px 24px;
+            font-weight: 500;
+            transition: all 300ms ease-in-out;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+        }
+        
+        .btn-primary:hover {
+            background-color: #357ABD;
+            transform: scale(1.02);
+            box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+        }
+        
+        .btn-primary:active {
+            transform: scale(0.98);
+        }
+        
+        .card-hover {
+            transition: all 300ms ease-in-out;
+        }
+        
+        .card-hover:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .faq-question {
+            cursor: pointer;
+            transition: all 300ms ease-in-out;
+            user-select: none;
+        }
+        
+        .faq-question:hover {
+            color: #4A90E2;
+        }
+        
+        .faq-icon {
+            transition: transform 300ms ease-in-out;
+        }
+        
+        .faq-answer {
+            transition: all 300ms ease-in-out;
+            max-height: 500px;
+            overflow: hidden;
+        }
+        
+        .faq-answer.hidden {
+            display: none;
+            max-height: 0;
+        }
+        
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background-color: #ffffff;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .mobile-menu {
+            transition: all 300ms ease-in-out;
+        }
+        
+        .mobile-menu.hidden {
+            display: none;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+        }
+        
+        .section-divider {
+            background: linear-gradient(90deg, transparent, #e0e0e0, transparent);
+        }
+        
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f4ff;
+            border-radius: 8px;
+            color: #4A90E2;
+        }
+        
+        .star-rating {
+            color: #fbbf24;
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: #ffffff;
+                border-bottom: 1px solid #f0f0f0;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white text-black">
+    <!-- Header Navigation -->
+    <header class="w-full bg-white border-b border-gray-100 sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 md:px-8 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="https://test-acc-12349.github.io/automate-with-n8n-2025-11-08-kkdfu" class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-black rounded flex items-center justify-center">
+                    <i class="fas fa-bolt text-white text-sm"></i>
+                </div>
+                <span class="text-xl font-bold text-black hidden sm:inline">n8n</span>
+            </a>
+            
+            <!-- Back Link -->
+            <a href="https://test-acc-12349.github.io/automate-with-n8n-2025-11-08-kkdfu" class="text-black hover:text-blue-600 transition-colors duration-300 font-light">
+                ← Back
+            </a>
+        </nav>
+    </header>
+    
+    <!-- Blog Hero Section -->
+    <section class="hero-gradient py-16 md:py-20 px-4 md:px-8">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight tracking-tight">
+                Our Blog
+            </h1>
+            <p class="text-lg md:text-xl text-gray-700 font-light mb-8 max-w-3xl mx-auto leading-relaxed">
+                Discover insights, tips, and best practices for workflow automation. Learn how to maximize n8n's potential and transform your business processes.
+            </p>
+        </div>
+    </section>
+    
+    <!-- Blog Content Section -->
+    <section class="py-12 md:py-16 px-4 md:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <!-- About Blog Section -->
+            <div class="mb-16 md:mb-20">
+                <div class="max-w-4xl">
+                    <h2 class="text-2xl md:text-3xl font-bold text-black mb-4 tracking-tight">
+                        Welcome to the n8n Blog
+                    </h2>
+                    <p class="text-lg text-gray-700 font-light leading-relaxed mb-4">
+                        Our blog is dedicated to helping you master workflow automation and unlock the full potential of n8n. Whether you're just getting started with automation or looking to optimize complex workflows, you'll find valuable content here.
+                    </p>
+                    <p class="text-lg text-gray-700 font-light leading-relaxed">
+                        Explore our collection of in-depth guides, practical tutorials, case studies, and industry insights. Learn from automation experts, discover real-world use cases, and stay updated on the latest features and best practices in the world of workflow automation.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Featured Blog Post -->
+            <div class="mb-16 md:mb-20">
+                <h2 class="text-2xl md:text-3xl font-bold text-black mb-8 tracking-tight">
+                    Featured Article
+                </h2>
+                <div class="card-hover bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-md">
+                    <div class="p-8 md:p-10">
+                        <!-- Date -->
+                        <div class="flex items-center gap-2 mb-4">
+                            <i class="fas fa-calendar text-blue-600"></i>
+                            <span class="text-sm font-semibold text-gray-600">November 8, 2025</span>
+                        </div>
+                        
+                        <!-- Title -->
+                        <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold text-black mb-6 leading-tight tracking-tight">
+                            Mastering n8n: The Complete Guide to Building Powerful Workflow Automations
+                        </h3>
+                        
+                        <!-- Excerpt -->
+                        <p class="text-lg text-gray-700 font-light leading-relaxed mb-8">
+                            Discover how n8n revolutionizes workflow automation for businesses of all sizes. This comprehensive guide explores n8n's powerful no-code platform, enabling teams to connect 400+ applications and automate complex processes without coding expertise. Learn essential features including visual workflow design, extensive integrations, and advanced capabilities like conditional logic and custom JavaScript. Explore real-world applications across sales, marketing, finance, and customer support. Master best practices for implementation, from starting simple to monitoring performance. Understand the transformative business impact: increased productivity, reduced errors, faster response times, and significant cost savings. Whether you're a startup or enterprise, n8n empowers rapid automation that scales your operations efficiently and drives competitive advantage.
+                        </p>
+                        
+                        <!-- Read More Button -->
+                        <a href="https://test-acc-12349.github.io/automate-with-n8n-2025-11-08-kkdfu/blog/mastering-n8n-the-complete-guide-to-building-power.html" class="btn-primary px-8 py-4 text-lg font-semibold hover:scale-105 active:scale-95 inline-block">
+                            Read Full Article →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More Articles Coming Soon -->
+            <div class="mb-16 md:mb-20">
+                <h2 class="text-2xl md:text-3xl font-bold text-black mb-8 tracking-tight">
+                    Latest Articles
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                    <!-- Placeholder Article 1 -->
+                    <div class="card-hover bg-white border border-gray-200 rounded-lg p-8 hover:shadow-md opacity-60">
+                        <div class="flex items-center gap-2 mb-4">
+                            <i class="fas fa-calendar text-blue-600"></i>
+                            <span class="text-sm font-semibold text-gray-600">Coming Soon</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-black mb-3">Advanced Workflow Patterns</h3>
+                        <p class="text-gray-700 font-light leading-relaxed mb-4">
+                            Explore advanced techniques for building complex workflows with conditional logic, error handling, and performance optimization...
+                        </p>
+                        <button disabled class="px-6 py-2 border border-gray-300 text-gray-400 rounded font-medium cursor-not-allowed">
+                            Coming Soon
+                        </button>
+                    </div>
+
+                    <!-- Placeholder Article 2 -->
+                    <div class="card-hover bg-white border border-gray-200 rounded-lg p-8 hover:shadow-md opacity-60">
+                        <div class="flex items-center gap-2 mb-4">
+                            <i class="fas fa-calendar text-blue-600"></i>
+                            <span class="text-sm font-semibold text-gray-600">Coming Soon</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-black mb-3">Integration Deep Dive: Salesforce to Slack</h3>
+                        <p class="text-gray-700 font-light leading-relaxed mb-4">
+                            Step-by-step tutorial on creating a powerful integration between Salesforce and Slack for real-time notifications...
+                        </p>
+                        <button disabled class="px-6 py-2 border border-gray-300 text-gray-400 rounded font-medium cursor-not-allowed">
+                            Coming Soon
+                        </button>
+                    </div>
+
+                    <!-- Placeholder Article 3 -->
+                    <div class="card-hover bg-white border border-gray-200 rounded-lg p-8 hover:shadow-md opacity-60">
+                        <div class="flex items-center gap-2 mb-4">
+                            <i class="fas fa-calendar text-blue-600"></i>
+                            <span class="text-sm font-semibold text-gray-600">Coming Soon</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-black mb-3">Case Study: How Company X Saved 100 Hours/Month</h3>
+                        <p class="text-gray-700 font-light leading-relaxed mb-4">
+                            Real-world example of how a mid-sized company transformed their operations using n8n automations...
+                        </p>
+                        <button disabled class="px-6 py-2 border border-gray-300 text-gray-400 rounded font-medium cursor-not-allowed">
+                            Coming Soon
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Newsletter Signup Section -->
+            <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-lg p-8 md:p-12 text-center">
+                <h3 class="text-2xl md:text-3xl font-bold text-black mb-4 tracking-tight">
+                    Stay Updated
+                </h3>
+                <p class="text-lg text-gray-700 font-light mb-6 max-w-2xl mx-auto">
+                    Subscribe to our blog to receive the latest automation tips, tutorials, and best practices delivered to your inbox.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+                    <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 font-light" />
+                    <button class="btn-primary px-8 py-3 font-semibold hover:scale-105 active:scale-95">
+                        Subscribe
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12 md:py-16 px-4 md:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <!-- Column 1: Brand -->
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-8 h-8 bg-white rounded flex items-center justify-center">
+                            <i class="fas fa-bolt text-black text-sm"></i>
+                        </div>
+                        <span class="text-xl font-bold">n8n</span>
+                    </div>
+                    <p class="text-gray-400 font-light text-sm leading-relaxed">
+                        Powerful workflow automation for teams of all sizes. Connect apps, automate tasks, and scale your business.
+                    </p>
+                </div>
+                
+                <!-- Column 2: Product -->
+                <div>
+                    <h4 class="font-bold text-white mb-4">Product</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="https://test-acc-12349.github.io/automate-with-n8n-2025-11-08-kkdfu#features" class="text-gray-400 hover:text-white transition-colors duration-300 font-light">Features</a></li>
+                        <li><a href="https://test-acc-12349.github.io/automate-with-n8n-2025-11-08-kkdfu#benefits" class="text-gray-400 hover:text-white transition-colors duration-300 font-light">Benefits</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 font-light">Pricing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 font-light">Security</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3: Resources -->
+                <div>
+                    <h4 class="font-bold text-white mb-4">Resources</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="https://test-acc-12349.github.io/automate-with-n8n-2025-11-08-kkdfu/blog.html" class="text-gray-400 hover:text-white transition-colors duration-300 font-light">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 font-light">Documentation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 font-light">Community</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 font-light">Support</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4: Legal -->
+                <div>
+                    <h4 class="font-bold text-white mb-4">Legal</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="https://test-acc-12349.github.io/automate-with-n8n-2025-11-08-kkdfu/privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300 font-light">Privacy Policy</a></li>
+                        <li><a href="https://test-acc-12349.github.io/automate-with-n8n-2025-11-08-kkdfu/terms.html" class="text-gray-400 hover:text-white transition-colors duration-300 font-light">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 font-light">Cookie Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 font-light">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Social Links -->
+            <div class="border-t border-gray-800 pt-8 mb-8">
+                <div class="flex items-center justify-between flex-col md:flex-row gap-6">
+                    <p class="text-gray-400 font-light text-sm">
+                        Follow us on social media
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-blue-600 transition-colors duration-300" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-blue-700 transition-colors duration-300" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-pink-600 transition-colors duration-300" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-blue-700 transition-colors duration-300" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex items-center justify-between flex-col md:flex-row gap-4">
+                    <p class="text-gray-400 font-light text-sm">
+                        &copy; 2025 n8n. All rights reserved.
+                    </p>
+                    <p class="text-gray-400 font-light text-sm">
+                        Contact: <a href="mailto:test@test.com" class="text-blue-400 hover:text-blue-300 transition-colors duration-300">test@test.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
