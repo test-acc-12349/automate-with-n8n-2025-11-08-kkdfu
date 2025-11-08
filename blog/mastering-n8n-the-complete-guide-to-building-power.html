@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Automate Your Business With n8n - Connect Apps Instantly, No Coding Required, Save Time Daily">
+    <meta name="keywords" content="automation, n8n, workflow, no-code, app integration">
+    <meta name="author" content="n8n">
+    <title>Automate With n8n - Premium Workflow Automation Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+        
+        body {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        
+        .btn-primary {
+            background-color: #4A90E2;
+            color: #ffffff;
+            border-radius: 4px;
+            padding: 12px 24px;
+            font-weight: 500;
+            transition: all 300ms ease-in-out;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+        }
+        
+        .btn-primary:hover {
+            background-color: #357ABD;
+            transform: scale(1.02);
+            box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+        }
+        
+        .btn-primary:active {
+            transform: scale(0.98);
+        }
+        
+        .card-hover {
+            transition: all 300ms ease-in-out;
+        }
+        
+        .card-hover:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .faq-question {
+            cursor: pointer;
+            transition: all 300ms ease-in-out;
+            user-select: none;
+        }
+        
+        .faq-question:hover {
+            color: #4A90E2;
+        }
+        
+        .faq-icon {
+            transition: transform 300ms ease-in-out;
+        }
+        
+        .faq-answer {
+            transition: all 300ms ease-in-out;
+            max-height: 500px;
+            overflow: hidden;
+        }
+        
+        .faq-answer.hidden {
+            display: none;
+            max-height: 0;
+        }
+        
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background-color: #ffffff;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .mobile-menu {
+            transition: all 300ms ease-in-out;
+        }
+        
+        .mobile-menu.hidden {
+            display: none;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+        }
+        
+        .section-divider {
+            background: linear-gradient(90deg, transparent, #e0e0e0, transparent);
+        }
+        
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f4ff;
+            border-radius: 8px;
+            color: #4A90E2;
+        }
+        
+        .star-rating {
+            color: #fbbf24;
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: #ffffff;
+                border-bottom: 1px solid #f0f0f0;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white text-black">
+    <!-- Header Navigation -->
+    <header class="w-full bg-white border-b border-gray-100 sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 md:px-8 py-4 flex items-center justify-between">
+            <div class="flex items-center justify-between w-full">
+                <!-- Logo -->
+                <a href="https://test-acc-12349.github.io/automate-with-n8n-2025-11-08-kkdfu" class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-black rounded flex items-center justify-center">
+                        <i class="fas fa-bolt text-white text-sm"></i>
+                    </div>
+                    <span class="text-xl font-bold text-black hidden sm:inline">n8n</span>
+                </a>
+                
+                <!-- Back Button -->
+                <a href="https://test-acc-12349.github.io/automate-with-n8n-2025-11-08-kkdfu" class="text-black hover:text-blue-600 transition-colors duration-300 font-light flex items-center gap-2">
+                    ← Back
+                </a>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Main Blog Content -->
+    <main class="max-w-4xl mx-auto px-4 py-12 md:py-16">
+        <article class="prose prose-lg max-w-none">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900">Mastering n8n: The Complete Guide to Building Powerful Workflow Automations</h1>
+            
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=675&fit=crop&q=80" alt="Advanced workflow automation dashboard with connected app integrations and process flows" class="w-full rounded-lg shadow-lg mb-8">
+            
+            <p class="mb-4 leading-relaxed text-gray-700">In today's fast-paced business environment, efficiency is everything. Companies are constantly searching for ways to streamline operations, reduce manual work, and empower their teams to focus on strategic initiatives rather than repetitive tasks. This is where n8n comes in—a powerful, open-source workflow automation platform that has revolutionized how businesses approach automation. Whether you're a startup looking to scale quickly or an enterprise seeking to optimize operations, n8n provides the tools you need to automate complex business processes without writing a single line of code.</p>
+            
+            <p class="mb-6 leading-relaxed text-gray-700">In this comprehensive guide, we'll explore everything you need to know about n8n, from its fundamental concepts to advanced automation strategies. You'll discover how to leverage this powerful platform to transform your workflow, eliminate time-consuming manual processes, and unlock new levels of productivity across your organization.</p>
+            
+            <h2 class="text-3xl font-semibold mt-8 mb-4 text-gray-900">Understanding n8n: The Foundation of Modern Automation</h2>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">n8n is a workflow automation platform that enables users to connect applications and automate business processes through a visual, drag-and-drop interface. Unlike traditional automation tools that require extensive coding knowledge, n8n democratizes automation by making it accessible to business users, analysts, and developers alike. The platform supports over 400 native integrations with popular business applications, and can connect to virtually any service with an API.</p>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">At its core, n8n operates on a simple principle: take data from one application, perform operations on it, and send it to another application—all automatically. This might sound straightforward, but the possibilities are virtually limitless. You can create workflows that trigger based on specific events, process data through complex logic, handle errors gracefully, and execute actions across multiple platforms simultaneously.</p>
+            
+            <p class="mb-6 leading-relaxed text-gray-700">The beauty of n8n lies in its flexibility. Whether you need a simple one-step automation that sends a Slack message when a new lead arrives in your CRM, or a complex multi-step workflow that processes hundreds of records with conditional logic and error handling, n8n can handle it all. The platform's visual workflow builder makes it easy to see exactly what your automation is doing at each step, making troubleshooting and optimization straightforward.</p>
+            
+            <h2 class="text-3xl font-semibold mt-8 mb-4 text-gray-900">Key Features That Make n8n Stand Out</h2>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Extensive Integration Library</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">One of n8n's greatest strengths is its extensive library of pre-built integrations. With over 400 native connectors, you can connect virtually all the tools your business uses. From CRM platforms like Salesforce and HubSpot, to communication tools like Slack and Microsoft Teams, to productivity apps like Google Workspace and Asana—n8n has you covered. This means you don't need to spend time building custom API connections; the integrations are already there, ready to use.</p>
+            
+            <p class="mb-6 leading-relaxed text-gray-700">Beyond pre-built integrations, n8n also supports webhooks and REST API calls, allowing you to connect virtually any application, regardless of whether a native integration exists. This flexibility ensures that your automation isn't limited by the platform's available integrations.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Visual Workflow Designer</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">The visual workflow designer is where n8n truly shines. Instead of writing code, you build workflows by dragging and dropping nodes onto a canvas. Each node represents a step in your automation—a trigger, an action, a condition, or a data transformation. You connect these nodes to create a visual representation of your process, making it easy to understand the flow at a glance.</p>
+            
+            <p class="mb-6 leading-relaxed text-gray-700">This visual approach has several advantages. First, it's intuitive—anyone can understand what a workflow does by looking at it. Second, it's fast—you can build complex automations in minutes rather than hours. Third, it's maintainable—when you need to make changes, you can easily see where to make them and understand the impact of your changes.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Advanced Workflow Capabilities</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">While n8n is easy to learn, it's also powerful enough for advanced use cases. The platform supports complex workflow features including conditional logic (if-then statements), loops for processing multiple items, error handling with retry logic, and data transformation using JavaScript expressions. You can create sophisticated workflows that handle edge cases, validate data, and respond intelligently to different scenarios.</p>
+            
+            <p class="mb-6 leading-relaxed text-gray-700">For users with coding expertise, n8n also allows you to write custom JavaScript code within workflows, giving you unlimited flexibility to implement any logic you can imagine. This combination of visual simplicity and code flexibility makes n8n suitable for both beginners and advanced users.</p>
+            
+            <h2 class="text-3xl font-semibold mt-8 mb-4 text-gray-900">Real-World Use Cases and Applications</h2>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">The applications for n8n are virtually limitless. Here are some of the most common and impactful use cases we see across different industries:</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Sales and Lead Management</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Sales teams can use n8n to automate lead qualification, assignment, and nurturing. For example, you could create a workflow that automatically captures leads from your website form, enriches them with additional data from a third-party service, qualifies them based on predefined criteria, and assigns them to the appropriate sales representative in your CRM. This automation can reduce lead response time from days to minutes, significantly improving conversion rates.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Marketing Campaign Management</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Marketing teams can leverage n8n to automate campaign workflows. Imagine automatically syncing contact data between your email marketing platform and CRM, triggering follow-up emails based on user behavior, or generating weekly performance reports and sending them to stakeholders. These automations free up your marketing team to focus on strategy and creative work rather than manual data management.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Financial and Invoice Processing</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Finance teams can automate invoice generation, payment processing, and reconciliation. n8n can extract invoice data from emails, validate it, generate invoices in your accounting system, and even trigger payment processes. This reduces manual data entry errors and accelerates your invoice-to-cash cycle.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Customer Support and Ticketing</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Support teams can automate ticket creation, assignment, and resolution workflows. You could set up automations that create support tickets from customer emails, categorize them based on content, assign them to appropriate team members, and send automated responses. This improves response times and ensures no customer inquiry falls through the cracks.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Data Synchronization and Backup</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">IT and operations teams can use n8n to keep data synchronized across multiple systems. You could create workflows that sync customer data between your CRM and accounting system, backup critical data to cloud storage, or maintain consistency across your entire tech stack. This ensures data integrity and reduces manual synchronization efforts.</p>
+            
+            <h2 class="text-3xl font-semibold mt-8 mb-4 text-gray-900">Getting Started with n8n: Best Practices</h2>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">If you're ready to start using n8n, here are some best practices to ensure your success:</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Start Simple and Scale</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Don't try to automate your entire business in one go. Start with a simple, high-impact workflow that you can complete in a few hours. This helps you learn the platform, see immediate benefits, and build confidence. Once you've successfully deployed your first automation, you can move on to more complex workflows.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Plan Your Workflow Before Building</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Take time to document your process before you start building. What triggers the automation? What steps need to happen? What data needs to be transformed? What are the possible error scenarios? Planning ahead helps you build more efficient workflows and avoid having to rebuild them later.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Implement Error Handling</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Real-world data is messy. Not every record will be perfect, and external services sometimes fail. Build error handling into your workflows from the start. Use try-catch logic, implement retry mechanisms, and set up notifications when errors occur. This ensures your automations are robust and reliable.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Monitor and Optimize</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Once your workflows are live, monitor them regularly. Look at execution logs to understand how your automations are performing. Are there any errors? Are there any bottlenecks? Use this data to optimize your workflows for better performance and reliability. n8n provides detailed execution logs that help you understand exactly what's happening at each step.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Document Your Workflows</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Document your workflows so that others in your organization can understand them and maintain them if needed. Include information about what the workflow does, why it exists, what triggers it, and what to do if it fails. This documentation becomes invaluable as your automation portfolio grows.</p>
+            
+            <h2 class="text-3xl font-semibold mt-8 mb-4 text-gray-900">Advanced Techniques for Power Users</h2>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Once you've mastered the basics, n8n offers several advanced features that can help you build even more powerful automations:</p>
+            
+            <ul class="list-disc list-inside mb-6 space-y-2">
+                <li class="text-gray-700"><strong>Custom JavaScript:</strong> Write custom JavaScript expressions to transform data, perform complex calculations, or implement business logic that isn't available in standard nodes.</li>
+                <li class="text-gray-700"><strong>Webhooks:</strong> Create webhooks to trigger workflows from external systems, enabling real-time integrations with services that don't have native n8n integrations.</li>
+                <li class="text-gray-700"><strong>Conditional Logic:</strong> Use switch nodes to create complex decision trees, allowing your workflows to respond differently based on data conditions.</li>
+                <li class="text-gray-700"><strong>Loops and Batch Processing:</strong> Process multiple items efficiently using loop nodes, allowing you to handle bulk operations without creating separate workflows.</li>
+                <li class="text-gray-700"><strong>Scheduled Execution:</strong> Schedule workflows to run at specific times or on recurring schedules, enabling automated reports, batch processing, and regular maintenance tasks.</li>
+                <li class="text-gray-700"><strong>Credential Management:</strong> Securely store and manage API keys, passwords, and other credentials, ensuring your workflows remain secure.</li>
+            </ul>
+            
+            <h2 class="text-3xl font-semibold mt-8 mb-4 text-gray-900">The Business Impact of Workflow Automation</h2>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">The benefits of implementing n8n and workflow automation extend far beyond just saving time. Organizations that embrace automation typically see improvements across multiple dimensions:</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Productivity and Efficiency</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">By automating repetitive tasks, your team can focus on high-value, strategic work. Studies show that teams using workflow automation save an average of 10+ hours per week per employee. Over a year, that's equivalent to adding several full-time employees to your team without the associated hiring and training costs.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Error Reduction</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Manual data entry and processing are prone to human error. Automated workflows execute consistently and accurately, reducing errors by up to 99%. This not only improves data quality but also reduces the time spent correcting mistakes.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Faster Response Times</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Automations execute instantly, 24/7. This means your customers get faster responses, your sales team processes leads more quickly, and your operations run more smoothly. In competitive markets, this speed advantage can be a significant differentiator.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Cost Savings</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Reduced manual work means lower operational costs. Many organizations see ROI from their automation investments within 3-6 months. As your automation portfolio grows, the cost savings compound, making automation one of the best investments you can make in your business infrastructure.</p>
+            
+            <h3 class="text-2xl font-medium mt-6 mb-3 text-gray-800">Scalability</h3>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">With automation, you can scale your operations without proportionally increasing your headcount. Process 10x more invoices, manage 10x more leads, or handle 10x more customer inquiries without hiring 10x more staff. This scalability enables rapid growth while maintaining profitability.</p>
+            
+            <h2 class="text-3xl font-semibold mt-8 mb-4 text-gray-900">Choosing the Right Automation Platform</h2>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">While there are several workflow automation platforms available, n8n stands out for several reasons. First, it's open-source, which means you're not locked into a proprietary platform and can self-host if needed. Second, it has an extensive integration library that covers most business use cases. Third, the visual workflow builder is intuitive enough for beginners but powerful enough for advanced users. Fourth, the pricing is transparent and affordable, with options for both cloud and self-hosted deployments.</p>
+            
+            <p class="mb-6 leading-relaxed text-gray-700">Most importantly, n8n has a vibrant community of users and developers who contribute integrations, share workflows, and provide support. This community aspect means you're never alone when building your automations—help is always available.</p>
+            
+            <h2 class="text-3xl font-semibold mt-8 mb-4 text-gray-900">Conclusion: Transform Your Business with n8n</h2>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">In today's digital-first business environment, workflow automation is no longer optional—it's essential. Companies that embrace automation gain significant competitive advantages in speed, efficiency, and scalability. n8n provides the tools you need to automate your business processes without requiring extensive technical expertise or large development budgets.</p>
+            
+            <p class="mb-4 leading-relaxed text-gray-700">Whether you're looking to save your team time, reduce errors, improve customer response times, or scale your operations, n8n has proven to be an effective solution for organizations of all sizes. The platform's combination of ease of use, powerful features, and extensive integrations makes it an excellent choice for anyone serious about workflow automation.</p>
+            
+            <p class="mb-6 leading-relaxed text-gray-700">The question is no longer whether you should automate your workflows—it's how quickly you can get started. With n8n, you can begin building your first automation today and see immediate benefits. Start simple, learn the platform, and gradually build a comprehensive automation strategy that transforms how your organization operates. The future of business is automated, and n8n is the platform that will help you get there.</p>
+        </article>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12 md:py-16 px-4 md:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <!-- Column 1: Brand -->
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-8 h-8 bg-white rounded flex items-center justify-center">
+                            <i class="fas fa-bolt text-black text-sm"></i>
+                        </div>
+                        <span class="text-xl font-bold">n8n</span>
+                    </div>
+                    <p class="text-gray-400 font-light text-sm leading-relaxed">
+                        Powerful workflow automation for teams of all sizes. Connect apps, automate tasks, and scale your business.
+                    </p>
+                </div>
+                
+                <!-- Column 2: Product -->
+                <div>
+                    <h4 class="font-bold text-white mb-4">Product</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="https://test-acc-12349.github.io/automate-with-n8n-2025-11-08-kkdfu#features" class="text-gray-400 hover:text-white transition-colors duration-300 font-light">Features</a></li>
+                        <li><a href="https://test-acc-12349.github.io/automate-with-n8n-2025-11-08-kkdfu#benefits" class="text-gray-400 hover:text-white transition-colors duration-300 font-light">Benefits</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 font-light">Pricing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 font-light">Security</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3: Resources -->
+                <div>
+                    <h4 class="font-bold text-white mb-4">Resources</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="https://test-acc-12349.github.io/automate-with-n8n-2025-11-08-kkdfu/blog.html" class="text-gray-400 hover:text-white transition-colors duration-300 font-light">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 font-light">Documentation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 font-light">Community</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 font-light">Support</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4: Legal -->
+                <div>
+                    <h4 class="font-bold text-white mb-4">Legal</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="https://test-acc-12349.github.io/automate-with-n8n-2025-11-08-kkdfu/privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300 font-light">Privacy Policy</a></li>
+                        <li><a href="https://test-acc-12349.github.io/automate-with-n8n-2025-11-08-kkdfu/terms.html" class="text-gray-400 hover:text-white transition-colors duration-300 font-light">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 font-light">Cookie Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 font-light">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Social Links -->
+            <div class="border-t border-gray-800 pt-8 mb-8">
+                <div class="flex items-center justify-between flex-col md:flex-row gap-6">
+                    <p class="text-gray-400 font-light text-sm">
+                        Follow us on social media
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-blue-600 transition-colors duration-300" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-blue-700 transition-colors duration-300" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-pink-600 transition-colors duration-300" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-blue-700 transition-colors duration-300" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex items-center justify-between flex-col md:flex-row gap-4">
+                    <p class="text-gray-400 font-light text-sm">
+                        &copy; 2025 n8n. All rights reserved.
+                    </p>
+                    <p class="text-gray-400 font-light text-sm">
+                        Contact: <a href="mailto:test@test.com" class="text-blue-400 hover:text-blue-300 transition-colors duration-300">test@test.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
